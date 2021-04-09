@@ -29,4 +29,5 @@
     box-shadow: 0 14px 28px rgba(179, 163, 163, 0.25);
     transition: .1s;
     transform: translateY(-7px);
+    cursor: pointer;
 }

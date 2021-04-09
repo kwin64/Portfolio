@@ -5,18 +5,32 @@
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project > span {
+    color: white;
 }
 
 .imageContainer {
     position: relative;
+    display: block;
+    overflow: hidden;
+    border: 1px solid black;
 }
 
 .imageContainer > img {
     width: 200px;
     height: 200px;
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
+    transition: 1s;
+    display: block;
+}
+
+.imageContainer > img:hover {
+    transform: scale(1.2);
 }
 
 .imageContainer > button {
@@ -30,8 +44,6 @@
 .imageContainer > button:hover {
     background-color: #969BAA;
     opacity: 0.1;
+    cursor: pointer;
 }
 
-.project > span {
-    color: white;
-}

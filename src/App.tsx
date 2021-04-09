@@ -43,6 +43,8 @@ const App = (
             <MainBlock photo={catImg}/>
             <Skills stateForSkills={stateForSkill}/>
             <Projects stateForProjects={stateForProjects}/>
+            <Header/>
+            <Header/>
         </div>
     );
 }
