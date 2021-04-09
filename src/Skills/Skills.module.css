@@ -22,3 +22,11 @@
     justify-content: space-between;
     border: 1px solid red;
 }
+.skills > a {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.skills > a:hover {
+    box-shadow: 0 14px 28px rgba(179, 163, 163, 0.25);
+    transition: .1s;
+    transform: translateY(-7px);
+}
