@@ -2,21 +2,26 @@ import React from 'react';
 import s from './MainBlock.module.css';
 import StyleContainer from '../common/styles/Container.module.css';
 
-const MainBlock = (
-    {}
+type PropsMainBlockType = {
+    photo: any
+}
+
+const MainBlock:React.FC<PropsMainBlockType> = (
+    {
+        photo
+    }
 ) => {
     return (
         <div className={s.mainBlock}>
             <div className={StyleContainer.container}>
-            <div className={s.informationMainBlock}>
-                <span>Hi There</span>
-                <h1>I am Yaschenko Eugene</h1>
-                <p>Frontend Developer</p>
-            </div>
-            <div className={s.photoMainBlock}>
-                Photo
-                <img src="" />
-            </div>
+                <div className={s.informationMainBlock}>
+                    <span>Hi There</span>
+                    <h1>I am Yaschenko Eugene</h1>
+                    <p>Frontend Developer</p>
+                </div>
+                <div className={s.photoMainBlock}>
+                    <img src={photo}/>
+                </div>
             </div>
         </div>
     );

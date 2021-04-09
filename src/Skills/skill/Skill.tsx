@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Skill.module.css';
 
-type PropsTypeSkill = {
+type PropsSkillType = {
     id: string
     title: string
     image: string
@@ -9,7 +9,7 @@ type PropsTypeSkill = {
 }
 
 
-const Skill: React.FC<PropsTypeSkill> = (
+const Skill: React.FC<PropsSkillType> = (
     {
         id,
         title,
@@ -18,13 +18,11 @@ const Skill: React.FC<PropsTypeSkill> = (
     }
 ) => {
     return (
-        <div>
-            <a className={s.skill} href={''} key={id}>
-                <img src={image}/>
-                <h3>{title}</h3>
-                <span>{description}</span>
-            </a>
-        </div>
+        <a className={s.skill} href={''} key={id}>
+            <img src={image}/>
+            <h3>{title}</h3>
+            <span>{description}</span>
+        </a>
     );
 }
 

@@ -5,17 +5,16 @@ import Skill from "./skill/Skill";
 import {StateForSkillType} from "../App";
 
 type PropsTypeSkills = {
-    stateForSkill: StateForSkillType
+    stateForSkills: StateForSkillType
 }
-
 
 const Skills: React.FC<PropsTypeSkills> = (
     {
-        stateForSkill
+        stateForSkills
     }
 ) => {
 
-    const skill = stateForSkill.map(s => {
+    const skill = stateForSkills.map(s => {
             return <Skill id={s.id}
                           title={s.title}
                           image={s.image}

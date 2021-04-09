@@ -1,11 +1,13 @@
 .SkillsBlock {
     margin: 50px auto;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
+    border: 1px solid red;
 }
 
 .title {
     margin: 50px;
+    border: 1px solid red;
 }
 
 .skillsContainer {
@@ -18,4 +20,5 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
 }

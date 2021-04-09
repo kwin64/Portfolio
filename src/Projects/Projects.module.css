@@ -1,4 +1,24 @@
-.ProjectsBlock {
+.projectsBlock {
+    margin: 50px auto;
     border: 1px solid red;
-    width: 100vh;
+    height: 100%;
+    flex-direction: column;
+}
+
+.title {
+    margin: 50px;
+    border: 1px solid red;
+}
+
+.projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
 }
