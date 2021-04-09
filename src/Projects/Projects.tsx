@@ -2,10 +2,10 @@ import React from 'react';
 import s from './Projects.module.css';
 import styleContainer from "../common/styles/Container.module.css";
 import Project from './Project/Project';
-import {StateForProjectsType} from "../App";
+import {OneProjectType} from "../App";
 
 type PropsProjectsType = {
-    stateForProjects: StateForProjectsType
+    stateForProjects: Array<OneProjectType>
 }
 
 const Projects: React.FC<PropsProjectsType> = (

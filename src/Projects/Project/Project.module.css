@@ -44,6 +44,26 @@
 .imageContainer > button:hover {
     background-color: #969BAA;
     opacity: 0.1;
+    transition: 0.2s;
     cursor: pointer;
 }
 
+.projectInformation {
+    color: white;
+}
+
+.projectInformation > button {
+    margin: 3px;
+    font-weight: 100;
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 1px;
+    background-color: #969BAA;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.projectInformation > button:hover {
+    opacity: 0.1;
+}

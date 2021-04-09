@@ -3,7 +3,7 @@ import s from './MainBlock.module.css';
 import StyleContainer from '../common/styles/Container.module.css';
 
 type PropsMainBlockType = {
-    photo: any
+    photo: string
 }
 
 const MainBlock:React.FC<PropsMainBlockType> = (

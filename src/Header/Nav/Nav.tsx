@@ -1,15 +1,23 @@
 import React from 'react';
 import s from './Nav.module.css';
+import {HeaderType} from "../../App";
 
-const Nav = (
-    {}
+type PropsNavType = {
+    stateForHeader: Array<HeaderType>
+}
+
+
+const Nav: React.FC<PropsNavType> = (
+    {
+        stateForHeader
+    }
 ) => {
+    const navbar = stateForHeader.map(s => {
+        return <a href='#'><img src={s.image} title={s.title}/></a>
+    })
     return (
         <div className={s.nav}>
-            <a href='#'>Main</a>
-            <a href='#'>Skills</a>
-            <a href='#'>Projects</a>
-            <a href='#'>Contacts</a>
+            {navbar}
         </div>
     );
 }

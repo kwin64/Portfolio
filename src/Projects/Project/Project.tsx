@@ -22,8 +22,11 @@ const Project: React.FC<PropsProjectType> = (
                 <img src={image}/>
                 <button>Show</button>
             </div>
-            <h3>{title}</h3>
-            <span>{description}</span>
+            <div className={s.projectInformation}>
+                <h3>{title}</h3>
+                <span>{description}</span>
+                <button>Show more</button>
+            </div>
         </div>
     );
 }

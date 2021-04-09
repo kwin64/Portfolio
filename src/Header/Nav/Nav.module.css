@@ -1,7 +1,37 @@
 .nav {
-    border: 1px solid red;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
     width: 300px;
+    margin-right: 50px;
+}
+
+.nav > a {
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 120, 201, 0.1)
+}
+
+.nav > a:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0; /*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #0086cb; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.nav > a:hover:after,
+.nav > a:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.nav > a > img {
+    width: 100%;
+    height: 100%;
 }

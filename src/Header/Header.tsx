@@ -1,13 +1,21 @@
 import React from 'react';
 import s from './Header.module.css';
 import Nav from "./Nav/Nav";
+import {HeaderType} from "../App";
 
-const Header = (
-    {}
+type PropsHeaderType = {
+    stateForHeader: Array<HeaderType>
+}
+
+const Header: React.FC<PropsHeaderType> = (
+    {
+        stateForHeader
+    }
 ) => {
+
     return (
         <div className={s.header}>
-            <Nav />
+            <Nav stateForHeader={stateForHeader}/>
         </div>
     );
 }

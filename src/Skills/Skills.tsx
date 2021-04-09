@@ -2,10 +2,10 @@ import React from 'react';
 import s from './Skills.module.css';
 import styleContainer from '../common/styles/Container.module.css';
 import Skill from "./skill/Skill";
-import {StateForSkillType} from "../App";
+import {OneSkillType} from "../App";
 
 type PropsTypeSkills = {
-    stateForSkills: StateForSkillType
+    stateForSkills: Array<OneSkillType>
 }
 
 const Skills: React.FC<PropsTypeSkills> = (
