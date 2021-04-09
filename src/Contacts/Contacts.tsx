@@ -3,6 +3,7 @@ import s from './Contacts.module.css';
 import styleContainer from "../common/styles/Container.module.css";
 import {ContactsType} from "../App";
 import ContactsHeader from './ContactsHeader/ContactsHeader';
+import ContactsForm from './ContactsForm/ContactsForm';
 
 type PropsContactsType = {
     stateForContacts: Array<ContactsType>
@@ -17,15 +18,9 @@ const Contacts: React.FC<PropsContactsType> = (
         <div className={s.contactsBlock}>
             <div className={`${s.contactsContainer} ${styleContainer.container}`}>
                 <h2>Hire Me</h2>
-                    <ContactsHeader stateForContacts={stateForContacts}/>
-                <div className={''}>
-                    <form action="">
-                        <input type="text"/>
-                        <input type="text"/>
-                        <textarea>
-
-                    </textarea>
-                    </form>
+                <ContactsHeader stateForContacts={stateForContacts}/>
+                <div className={s.formContainer}>
+                    <ContactsForm/>
                 </div>
             </div>
         </div>
