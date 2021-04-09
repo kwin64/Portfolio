@@ -1,18 +1,11 @@
 .page {
     background-color: #0E1525;
 }
-/*.page > .container {*/
-/*    border: 1px solid red;*/
-/*    height: 100%;*/
-/*    width: 80%;*/
-/*    margin: 0 auto;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: space-around;*/
-/*}*/
-h1 {
+
+h1, h2, a {
     color: white;
 }
+
 p {
-   color: #969BAA;
+    color: #969BAA;
 }
