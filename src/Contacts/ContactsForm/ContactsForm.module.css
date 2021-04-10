@@ -1,3 +1,42 @@
 .form {
-    border: 1px solid red;
+    margin: 20px;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form > input, textarea {
+    margin: 10px;
+    background-color: #0E1525;
+    border: 2px solid #969BAA;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.form > button {
+    margin: 3px;
+    font-weight: 100;
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 1px;
+    background-color: #969BAA;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form > button:hover {
+    opacity: 0.1;
+}
+
+.form > input:hover, textarea:hover {
+    box-shadow: 0 14px 28px rgba(179, 163, 163, 0.25);
+    transition: .1s;
+}
+
+.form > input:focus, textarea:focus {
+    box-shadow: 0 14px 28px rgba(179, 163, 163, 0.25);
 }

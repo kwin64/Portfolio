@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     background-color: #0E1525;
+    flex-wrap: wrap;
 }
 
 h1, h2, h3, a {

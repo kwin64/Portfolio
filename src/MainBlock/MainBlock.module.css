@@ -1,14 +1,22 @@
+@media (max-width: 538px) {
+    .photoMainBlock > img {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+
 .mainBlock {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 100vh;
 }
 .informationMainBlock {
     width: 400px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .informationMainBlock > span {
     color: #969BAA;
 }
 .photoMainBlock {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }

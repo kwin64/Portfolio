@@ -1,17 +1,11 @@
 .contactsBlock {
     margin: 50px auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 100%;
-    flex-direction: column;
+
 }
 
 .contactsContainer {
+    display:flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-.formContainer{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }
