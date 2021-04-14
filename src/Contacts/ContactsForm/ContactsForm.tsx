@@ -11,7 +11,7 @@ const Contacts: React.FC<PropsContactsType> = (
             <input type="text" placeholder='Your name'/>
             <input type="text" placeholder='Your mail'/>
             <input type="text" placeholder='Write a subject'/>
-            <textarea placeholder='Your message'></textarea>
+            <textarea placeholder='Your message'/>
             <button>Send message</button>
         </form>
     );

@@ -16,8 +16,12 @@ const Footer: React.FC<PropsContactsType> = (
     })
     return (
         <div className={s.footerContacts}>
-            <p>Contact Email:</p>
-            {contacts}
+            <div className={s.footerTitle}>
+                <p>Contact Email:</p>
+            </div>
+            <div className={s.contacts}>
+                {contacts}
+            </div>
         </div>
     );
 }
