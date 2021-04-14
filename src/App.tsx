@@ -6,13 +6,17 @@ import MainBlock from "./MainBlock/MainBlock";
 import Skills from "./Skills/Skills";
 import Contacts from './Contacts/Contacts';
 import {v1} from "uuid";
+
 import reactImg from '../src/common/images/ImageSkills/react.png'
 import reduxImg from '../src/common/images/ImageSkills/redux.png'
 import typescriptImg from '../src/common/images/ImageSkills/typescript.png'
+
 import counterImg from '../src/common/images/ImageProjects/counter.png'
 import SocialNetworkImg from '../src/common/images/ImageProjects/sn.png'
 import todoImg from '../src/common/images/ImageProjects/todo.png'
+
 import catImg from '../src/common/images/ImageMainBlock/cat.jpg'
+
 import homeImg from '../src/common/images/ImageHeader/home.png'
 import skillsImg from '../src/common/images/ImageHeader/skills.png'
 import projectsImg from '../src/common/images/ImageHeader/projects.png'
