@@ -13,7 +13,10 @@ const Nav: React.FC<PropsNavType> = (
     }
 ) => {
     const navbar = stateForHeader.map(s => {
-        return <a href='#'><img src={s.image} title={s.title}/></a>
+        return <a href='#' data-title={s.title}>
+            <img src={s.image} title={s.title}/>
+            <span>{s.title}</span>
+        </a>
     })
     return (
         <div className={s.nav}>
