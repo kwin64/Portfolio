@@ -1,9 +1,11 @@
 .form {
     margin: 20px;
-    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid fuchsia;
 }
 
 .form > input, textarea {
