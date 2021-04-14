@@ -1,3 +1,9 @@
+@media (min-width: 785px) {
+    .formContainer > form {
+        width: 600px;
+    }
+}
+
 .contactsBlock {
     margin: 50px auto;
     border: 1px solid darkblue;
@@ -7,4 +13,11 @@
 .contactsContainer {
     display:flex;
     flex-direction: column;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    width: 100%;
 }
