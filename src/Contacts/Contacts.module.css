@@ -5,19 +5,19 @@
 }
 
 .contactsBlock {
-    /*border: 1px solid darkblue;*/
+    border: 1px solid darkblue;
     height: 100%;
 }
 
 .contactsContainer {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.formContainer{
+.formContainer {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     background-color: #222222;
 }

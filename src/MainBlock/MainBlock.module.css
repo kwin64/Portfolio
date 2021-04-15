@@ -1,21 +1,26 @@
-@media (max-width: 538px) {
+@media (max-width: 700px) {
+    .mainBlock > img {
+        width: 200px;
+        height: 200px;
+    }
+
     .photoMainBlock > img {
         width: 200px;
-        height: 300px;
+        height: 200px;
     }
 }
 
 .mainBlock {
     /*border: 1px solid darkblue;*/
-    height: 100vh;
+    height: 75vh;
     background-color: #9cacbf;
 }
 
 .informationMainBlock {
     width: 400px;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     background-color: #222222;
-
+    padding: 10px;
 }
 
 .informationMainBlock > span {
