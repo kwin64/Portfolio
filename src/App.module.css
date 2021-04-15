@@ -4,11 +4,19 @@
     flex-wrap: wrap;
 }
 
+/*@media (max-width: 600px) {*/
+/*    .mainblock > img {*/
+/*        width: 200px;*/
+/*        height: 200px;*/
+/*    }*/
+/*}*/
+
 h1, h2, h3, a, span {
     color: white;
     font-family: "Agency FB", sans-serif;
     background-color: #222222;
 }
+
 
 h2:before,
 h2:after {
@@ -18,7 +26,7 @@ h2:after {
     display: inline-block;
     vertical-align: middle;
     /* Ширина - 100% и указываем толщину линии */
-    width: 100%;
+    width: 20%;
     height: 2px;
     /* Цвет линии */
     background-color: #f4d71a;
@@ -28,14 +36,14 @@ h2:after {
 
 h2:before {
     /* Ставим левую линию слева от текста, смещая ее на 100% влево */
-    margin-left: -100%;
+    margin-left: -20%;
     /* Отступ линии от заголовка */
     left: -14px;
 }
 
 h2:after {
     /* Ставим правую линию справа от текста, смещая ее на 100% вправо */
-    margin-right: -100%;
+    margin-right: -20%;
     /* Отступ линии от заголовка */
     right: -14px;
 }
@@ -48,7 +56,6 @@ p {
 
 .page {
     border: 1px solid red;
-    border-radius: 10px;
     margin: 50px;
     background-color: #9cacbf;
 }

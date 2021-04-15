@@ -16,18 +16,17 @@ import SocialNetworkImg from '../src/common/images/ImageProjects/sn.png'
 import todoImg from '../src/common/images/ImageProjects/todo.png'
 
 import catImg from '../src/common/images/ImageMainBlock/cat.jpg'
-
-// import homeImg from '../src/common/images/ImageHeader/home.png'
-// import skillsImg from '../src/common/images/ImageHeader/skills.png'
-// import projectsImg from '../src/common/images/ImageHeader/projects.png'
-// import contactsImg from '../src/common/images/ImageHeader/contacts.png'
-
 import linkedinImg from '../src/common/images/ImageContacts/linkedin.png'
 import githubImg from '../src/common/images/ImageContacts/github.png'
 import telegramImg from '../src/common/images/ImageContacts/messenger.png'
 import vkImg from '../src/common/images/ImageContacts/vk.png'
 import instagramImg from '../src/common/images/ImageContacts/instagram.png'
 import Footer from "./Footer/Footer";
+
+// import homeImg from '../src/common/images/ImageHeader/home.png'
+// import skillsImg from '../src/common/images/ImageHeader/skills.png'
+// import projectsImg from '../src/common/images/ImageHeader/projects.png'
+// import contactsImg from '../src/common/images/ImageHeader/contacts.png'
 
 export type OneSkillType = { id: string, title: string, image: string, description: string }
 const stateForSkill: Array<OneSkillType> = [

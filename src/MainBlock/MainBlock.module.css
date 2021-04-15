@@ -1,19 +1,19 @@
-@media (max-width: 700px) {
-    .mainBlock > img {
+@media (max-width: 650px) {
+    .mainBlock > .photoMainBlock img {
         width: 200px;
-        height: 200px;
+        height: 200px; /* Ширина и высота */
     }
-
-    .photoMainBlock > img {
-        width: 200px;
-        height: 200px;
+}
+@media (max-width: 430px) {
+    .mainBlock > .photoMainBlock img {
+        width: 150px;
+        height: 150px; /* Ширина и высота */
     }
 }
 
 .mainBlock {
-    /*border: 1px solid darkblue;*/
+    border: 1px solid darkblue;
     height: 75vh;
-    background-color: #9cacbf;
 }
 
 .informationMainBlock {

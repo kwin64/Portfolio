@@ -13,7 +13,7 @@ const MainBlock: React.FC<PropsMainBlockType> = (
 ) => {
     return (
         <div className={s.mainBlock}>
-            <div className={StyleContainer.container}>
+            <div className={`${StyleContainer.container} ${s.mainBlock}`}>
                 <div className={s.photoMainBlock}>
                     <img src={photo}/>
                 </div>
