@@ -17,10 +17,10 @@ import todoImg from '../src/common/images/ImageProjects/todo.png'
 
 import catImg from '../src/common/images/ImageMainBlock/cat.jpg'
 
-import homeImg from '../src/common/images/ImageHeader/home.png'
-import skillsImg from '../src/common/images/ImageHeader/skills.png'
-import projectsImg from '../src/common/images/ImageHeader/projects.png'
-import contactsImg from '../src/common/images/ImageHeader/contacts.png'
+// import homeImg from '../src/common/images/ImageHeader/home.png'
+// import skillsImg from '../src/common/images/ImageHeader/skills.png'
+// import projectsImg from '../src/common/images/ImageHeader/projects.png'
+// import contactsImg from '../src/common/images/ImageHeader/contacts.png'
 
 import linkedinImg from '../src/common/images/ImageContacts/linkedin.png'
 import githubImg from '../src/common/images/ImageContacts/github.png'
@@ -73,12 +73,12 @@ const stateForProjects: Array<OneProjectType> = [
     }
 ]
 
-export type HeaderType = { id: string, image: string, title: string }
+export type HeaderType = { id: string, title: string }
 const stateForHeader: Array<HeaderType> = [
-    {id: v1(), image: homeImg, title: 'Home'},
-    {id: v1(), image: skillsImg, title: 'Skills'},
-    {id: v1(), image: projectsImg, title: 'Projects'},
-    {id: v1(), image: contactsImg, title: 'Contacts'}
+    {id: v1(),  title: 'Home'},
+    {id: v1(),  title: 'Skills'},
+    {id: v1(),  title: 'Projects'},
+    {id: v1(),  title: 'Contacts'}
 ]
 
 export type ContactsType = { id: string, image: string, title: string, link: string }

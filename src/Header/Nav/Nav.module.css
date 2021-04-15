@@ -5,65 +5,63 @@
 }
 
 .nav {
-    text-decoration: none;
     display: flex;
     justify-content: space-around;
-    width: 300px;
+    width: 80%;
     background-color: #091020;
     border: 1px solid fuchsia;
-    margin-right: 50px;
 }
 
 .nav > a {
+    display: flex;
+    text-decoration: none;
+    width: 100px;
+    border: 1px solid yellow;
     position: relative;
     cursor: pointer;
     line-height: 1;
-    width: 30px;
-    height: 30px;
-    background-color: rgba(0, 120, 201, 0.1);
-    border: 1px solid yellow;
-    text-decoration: none;
-    margin: 20px;
+    background-color: #091020;
+    font-size: 25px;
+    justify-content: center;
 }
 
 .nav > a > span {
-    color: #ffffff;
-    font-size: 20px;
-    border: 1px solid fuchsia;
-    margin-top: 50px;
-    padding: 20px;
+    background-color: #091020;
+    display: flex;
 }
 
-/*.nav > a:hover::after {*/
-/*    content: attr(data-title); !* Выводим текст *!*/
-/*    font-size: 25px;*/
-/*    position: absolute; !* Абсолютное позиционирование *!*/
-/*    left: -10px;*/
-/*    right: 0;*/
-/*    bottom: -32px; !* Положение подсказки *!*/
-/*    z-index: 1; !* Отображаем подсказку поверх других элементов *!*/
-/*    color: #fff; !* Цвет текста *!*/
-/*    text-align: center; !* Выравнивание текста по центру *!*/
-/*    font-family: "Agency FB", sans-serif; !* Гарнитура шрифта *!*/
-/*}*/
-
-/*.nav > a:after {*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    left: 0; !*изменить на right:0;, чтобы изменить направление подчёркивания *!*/
-/*    width: 0; !*задаём длинну линии до наведения курсора*!*/
-/*    height: 2px; !*задаём ширину линии*!*/
-/*    background-color: #0086cb; !*задаём цвет линии*!*/
-/*    content: "";*/
-/*    transition: width 0.3s ease-out; !*задаём время анимации*!*/
-/*}*/
-
-/*.nav > a:hover:after,*/
-/*.nav > a:focus:after {*/
-/*    width: 100%; !*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*!*/
-/*}*/
-
-.nav > a > img {
+.nav a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 0.1em;
+    background-color: yellow;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+a:hover:after,
+a:focus:after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: hotpink;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
 }
