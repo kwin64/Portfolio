@@ -12,7 +12,6 @@
 }
 
 .mainBlock {
-    border: 1px solid darkblue;
     height: 75vh;
 }
 
@@ -29,7 +28,6 @@
 }
 
 .photoMainBlock {
-    /*border-radius: 10px;*/
     background-color: #222222;
 }
 

@@ -15,7 +15,7 @@
 
 .title {
     margin: 50px;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     background-color: #222222;
 }
 
@@ -23,23 +23,24 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 .skills {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /*border: 1px solid fuchsia;*/
+    border: 1px solid fuchsia;
     background-color: #222222;
 }
 
 .skills > a {
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /*border: 1px solid yellow;*/
+    border: 1px solid yellow;
 }
 
+/*хз откуда полоска под блоком*/
 .skills > a:hover {
     box-shadow: 0 14px 28px rgba(219, 189, 71, 0.25);
     transition: .1s;

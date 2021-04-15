@@ -17,7 +17,7 @@
 .formContainer {
     display: flex;
     justify-content: center;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     width: 100%;
     background-color: #222222;
 }
