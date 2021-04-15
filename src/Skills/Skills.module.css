@@ -1,4 +1,4 @@
-@media (max-width: 1610px) and  (min-width: 538px){
+@media (max-width: 1610px) and  (min-width: 538px) {
     .skills {
         flex-direction: column;
         justify-content: center;
@@ -7,40 +7,83 @@
     }
 }
 
+/*.skills > h2:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: calc(50% - 1px);*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    height: 2px;*/
+/*    background: #E5EDEA;*/
+/*    z-index: -1;*/
+/*}*/
+
+.title > h2:before,
+.title > h2:after {
+    /* Свойство content необходимо указывать хотя бы пустое, иначе псевдоэлементы не отобразятся */
+    content: "";
+    /* Свойства линий, выравнивание по центру по вертикали */
+    display: inline-block;
+    vertical-align: middle;
+    /* Ширина - 100% и указываем толщину линии */
+    width: 100%;
+    height: 2px;
+    /* Цвет линии */
+    background-color: #f4801a;
+    /* Возможность для пседоэлементов изменить позицию линии */
+    position: relative;
+}
+
+.title > h2:before {
+    /* Ставим левую линию слева от текста, смещая ее на 100% влево */
+    margin-left: -100%;
+    /* Отступ линии от заголовка */
+    left: -14px;
+}
+
+.title > h2:after {
+    /* Ставим правую линию справа от текста, смещая ее на 100% вправо */
+    margin-right: -100%;
+    /* Отступ линии от заголовка */
+    right: -14px;
+}
+
+
 .SkillsBlock {
-    margin: 50px auto;
     height: 100%;
     flex-direction: column;
-    border: 1px solid darkblue;
+    /*border: 1px solid darkblue;*/
 }
 
 .title {
     margin: 50px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    background-color: #222222;
 }
 
 .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .skills {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid fuchsia;
+    /*border: 1px solid fuchsia;*/
+    background-color: #222222;
 }
 
 .skills > a {
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
 }
 
 .skills > a:hover {
-    box-shadow: 0 14px 28px rgba(179, 163, 163, 0.25);
+    box-shadow: 0 14px 28px rgba(219, 189, 71, 0.25);
     transition: .1s;
     transform: translateY(-7px);
     cursor: pointer;

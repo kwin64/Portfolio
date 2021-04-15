@@ -1,9 +1,8 @@
 .header {
-    background-color: #091020;
     height: 80px;
-    border: 1px solid darkblue;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #9cacbf;
 }
 

@@ -6,19 +6,32 @@
 }
 
 .mainBlock {
-    border: 1px solid darkblue;
+    /*border: 1px solid darkblue;*/
     height: 100vh;
+    background-color: #9cacbf;
 }
 
 .informationMainBlock {
     width: 400px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    background-color: #222222;
+
 }
 
 .informationMainBlock > span {
     color: #969BAA;
+    background-color: #222222;
 }
 
 .photoMainBlock {
-    border: 1px solid red;
+    /*border-radius: 10px;*/
+    background-color: #222222;
+}
+
+.photoMainBlock > img {
+    width: 400px;
+    height: 400px; /* Ширина и высота */
+    border-radius: 50%; /* Превращаем в круг */
+    border: 3px solid darkgrey; /* Параметры рамки */
+    box-shadow: 0 0 20px black; /* Параметры тени */
 }

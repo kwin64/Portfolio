@@ -6,7 +6,7 @@ type PropsMainBlockType = {
     photo: string
 }
 
-const MainBlock:React.FC<PropsMainBlockType> = (
+const MainBlock: React.FC<PropsMainBlockType> = (
     {
         photo
     }
@@ -14,13 +14,13 @@ const MainBlock:React.FC<PropsMainBlockType> = (
     return (
         <div className={s.mainBlock}>
             <div className={StyleContainer.container}>
+                <div className={s.photoMainBlock}>
+                    <img src={photo}/>
+                </div>
                 <div className={s.informationMainBlock}>
                     <span>Hi There</span>
                     <h1>I am Yaschenko Eugene</h1>
                     <p>Frontend Developer</p>
-                </div>
-                <div className={s.photoMainBlock}>
-                    <img src={photo}/>
                 </div>
             </div>
         </div>

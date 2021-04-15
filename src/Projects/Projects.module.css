@@ -1,4 +1,4 @@
-@media (max-width: 1614px) and  (min-width: 538px){
+@media (max-width: 1614px) and  (min-width: 538px) {
     .projects {
         flex-direction: column;
         justify-content: center;
@@ -8,27 +8,29 @@
 }
 
 .projectsBlock {
-    margin: 50px auto;
-    border: 1px solid darkblue;
+    /*border: 1px solid darkblue;*/
     height: 100%;
     flex-direction: column;
 }
 
 .title {
     margin: 50px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    background-color: #222222;
 }
-/*1038px*/
+
 .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .projects {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid fuchsia;
+    /*border: 1px solid fuchsia;*/
+    background-color: #222222;
+
 }

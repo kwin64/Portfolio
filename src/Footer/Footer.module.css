@@ -5,11 +5,19 @@
 }
 
 .footerContacts {
-    border: 1px solid darkblue;
+    /*border: 1px solid darkblue;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    background-color: #222222;
+}
+.footerTitle{
+    background-color: #222222;
+}
+.contacts{
+    background-color: #222222;
 }
 
 .contacts > a {
@@ -17,10 +25,10 @@
 }
 
 .contacts > a > img {
-    border: 1px solid cyan;
     margin: 10px;
     width: 30px;
     height: 30px;
+    background-color: #222222;
 }
 
 .contacts > a > img:hover {
