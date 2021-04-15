@@ -1,6 +1,12 @@
-@media (max-width: 1280px) {
-    .nav > a {
+@media (max-width: 580px) {
+    .nav > .linksForMedia {
+        width: 50px;
+    }
 
+    .nav > a > span {
+        display: flex;
+        justify-content: center;
+        font-size: 70%;
     }
 }
 
@@ -15,7 +21,7 @@
 .nav > a {
     display: flex;
     text-decoration: none;
-    width: 100px;
+    width: 80px;
     border: 1px solid yellow;
     position: relative;
     cursor: pointer;
@@ -27,7 +33,6 @@
 
 .nav > a > span {
     background-color: #091020;
-    display: flex;
 }
 
 .nav a:after {

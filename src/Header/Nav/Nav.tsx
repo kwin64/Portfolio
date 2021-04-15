@@ -1,6 +1,7 @@
 import React from 'react';
-import s from './Nav.module.css';
+import style from './Nav.module.css';
 import {HeaderType} from "../../App";
+
 
 type PropsNavType = {
     stateForHeader: Array<HeaderType>
@@ -14,13 +15,13 @@ const Nav: React.FC<PropsNavType> = (
 ) => {
     const navbar = stateForHeader.map(s => {
         return (
-            <a href='#'>
+            <a className={style.linksForMedia} href='#'>
                 <span>{s.title}</span>
             </a>
         )
     })
     return (
-        <div className={s.nav}>
+        <div className={style.nav}>
             {navbar}
         </div>
     );
